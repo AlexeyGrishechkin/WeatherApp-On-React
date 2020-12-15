@@ -19,7 +19,7 @@ const Main = () => {
   const [today, setToday] = useState(descriptionWeather);
   const [tomorrow, setTomorrow] = useState(descriptionWeather);
 
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState("lat=53.69&lon=23.82");
 
   useEffect(() => {
     const setWeather = async () => {
@@ -32,7 +32,7 @@ const Main = () => {
         icon: weather.current.weather[0].icon,
         id: weather.current.weather[0].id,
         main: weather.current.weather[0].main,
-        wind_speed: weather.current.wind_speed,
+        windSpeed: weather.current.wind_speed,
       });
       setTomorrow({
         temp: weather.daily[1].temp.day,
@@ -41,7 +41,7 @@ const Main = () => {
         icon: weather.daily[1].weather[0].icon,
         id: weather.daily[1].weather[0].id,
         main: weather.daily[1].weather[0].main,
-        wind_speed: weather.daily[1].wind_speed,
+        windSpeed: weather.daily[1].wind_speed,
       });
       const prevWeather = await WeatherService.gettingPrevWeather(city);
       setYesterday({
@@ -51,7 +51,7 @@ const Main = () => {
         icon: prevWeather.current.weather[0].icon,
         id: prevWeather.current.weather[0].id,
         main: prevWeather.current.weather[0].main,
-        wind_speed: prevWeather.current.wind_speed,
+        windSpeed: prevWeather.current.wind_speed,
       });
     };
 
