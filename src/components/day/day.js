@@ -10,7 +10,7 @@ function WeatherItem(props){
                     <div className='days'>
                         <h2>{Math.round(temp)}°C</h2>
                         <img src={img_URL} />
-                        <p>{main}</p>    
+                        <p>Temperature: {Math.round(temp)}°C, {main}</p>    
                         <p>Feels like: {Math.round(feels_like)}°C, {description}</p>
                         <p>Wind speed: {wind_speed}</p>
                     </div>
