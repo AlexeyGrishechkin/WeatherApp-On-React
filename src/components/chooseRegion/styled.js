@@ -1,17 +1,19 @@
+import styled from 'styled-components';
 
-/* Select */
-.container {
+export const Container = styled.section`
+  & {
     margin: 30px auto;
     width: 400px;
     text-align: center;
   }
-  
-  .container > .dropdown {
+  & > Dropdown {
     margin: 0 20px;
     vertical-align: top;
   }
-  
-  .dropdown {
+`;
+
+export const Dropdown = styled.div`
+  & {
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -28,8 +30,8 @@
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   }
-  
-  .dropdown:before, .dropdown:after {
+  &:before,
+  &:after {
     content: '';
     position: absolute;
     z-index: 2;
@@ -41,19 +43,19 @@
     border-color: #888888 transparent;
     pointer-events: none;
   }
-  
-  .dropdown:before {
+  &:before {
     border-bottom-style: solid;
     border-top: none;
   }
-  
-  .dropdown:after {
+
+  &:after {
     margin-top: 7px;
     border-top-style: solid;
     border-bottom: none;
   }
-  
-  .dropdown-select {
+`;
+export const Dropdown_select = styled.select`
+  & {
     position: relative;
     width: 130%;
     margin: 0;
@@ -69,8 +71,8 @@
     border-radius: 0;
     -webkit-appearance: none;
   }
-  
-  .dropdown-select:focus {
+
+  &:focus {
     z-index: 3;
     width: 100%;
     color: #394349;
@@ -78,8 +80,8 @@
     outline: 2px solid -webkit-focus-ring-color;
     outline-offset: -2px;
   }
-  
-  .dropdown-select > option {
+
+  & > option {
     margin: 3px;
     padding: 6px 8px;
     text-shadow: none;
@@ -87,10 +89,4 @@
     border-radius: 3px;
     cursor: pointer;
   }
-  
-  @-moz-document url-prefix() {
-    .dropdown-select {
-      padding-left: 6px;
-    }
-  } 
-  
+`;

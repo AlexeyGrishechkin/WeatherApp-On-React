@@ -1,10 +1,11 @@
-.flexFull {
+import styled from 'styled-components';
+
+export const WrapFlex = styled.div`
   display: flex;
   max-width: 550px;
   margin: 0 auto;
-}
-
-.fullData {
+`;
+export const Description = styled.div`
   border: 2px solid whitesmoke;
   padding: 10px;
   margin: 0 auto;
@@ -14,19 +15,16 @@
   display: inline-block;
   min-width: 250px;
   min-height: 300px;
-}
-
-.fullData h2 {
+`;
+export const Title = styled.h2`
   text-align: center;
-}
-
-.fullData p {
+`;
+export const Text = styled.p`
   border-bottom: 1px dashed whitesmoke;
   text-align: left;
-}
-
-.fullData img {
+`;
+export const Image = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+`;

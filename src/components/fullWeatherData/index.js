@@ -1,3 +1,3 @@
-import FullData from './fullWeatherData'
+import FullData from './FullWeatherData.tsx';
 
-export default FullData
+export default FullData;

@@ -1,3 +1,3 @@
-import ChooseRegion from "./selectRegion";
+import ChooseRegion from './ChooseRegion.tsx';
 
-export default ChooseRegion
+export default ChooseRegion;

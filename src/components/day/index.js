@@ -1,3 +1,2 @@
-import WeatherItem from './descriptionWeather'
-
-export default WeatherItem
+import Day from './Day.tsx';
+export default Day;

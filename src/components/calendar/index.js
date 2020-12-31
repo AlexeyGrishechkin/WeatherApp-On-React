@@ -1,3 +1,3 @@
-import Calendar from './calendar'
+import Calendar from './Calendar.tsx';
 
-export default Calendar
+export default Calendar;
