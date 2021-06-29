@@ -1,0 +1,21 @@
+.days {
+  border: 2px solid whitesmoke;
+  padding: 10px;
+  min-width: 240px;
+  margin: 0 auto;
+}
+
+.days h2 {
+  text-align: center;
+}
+
+.days p {
+  border-bottom: 1px dashed whitesmoke;
+  text-align: left;
+}
+
+.days img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
