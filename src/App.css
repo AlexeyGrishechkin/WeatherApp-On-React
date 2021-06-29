@@ -4,6 +4,6 @@
 
 .wrap {
   background-image: url(https://hostes.pro/wp-content/uploads/2018/06/Nature-Sunset-Light-Blur-Background.jpg);
-  height: 720px;
+  min-height: 720px;
   margin: 0 auto;
 }

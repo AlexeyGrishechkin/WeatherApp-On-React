@@ -1,12 +1,14 @@
 import React from 'react'
-import WeatherItem from '../Day/day'
 import './calendar.css'
+import WeatherItem from '../day/day'
 
 
-function Calendar(props){
+
+const Calendar = (props) => {
+    
+
         return(
             <div>
-                 <h2>Grodno</h2>
                  <div className='grid'>
                      <h3>Yesterday</h3>
                      <h3>Today</h3>
@@ -25,6 +27,7 @@ function Calendar(props){
                  </div>
             </div>
         )
+        
 }
 
 export default Calendar
